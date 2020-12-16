@@ -47,7 +47,6 @@ body {
 }
 
 .content {
-  padding: 20px;
   margin-top: 70px;
 }
 
@@ -80,9 +79,6 @@ body {
 .divider {
   margin-top: 50px;
   border-top: 1px solid hsl(0, 0%, 59%);
-  width: 112%;
-  position: relative;
-  left: -20px;
 }
 .card-foot {
   text-align: center;
@@ -101,11 +97,5 @@ body {
 }
 
 .attribution {
-  margin-top: 3rem;
-}
-
-@media only screen and (max-width: 400px) {
-  .divider {
-    width: 115%;
-  }
+  margin-top: 6rem;
 }
