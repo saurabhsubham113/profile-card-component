@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./images/bg-pattern-top.svg") no-repeat,
+    url("./images/bg-pattern-bottom.svg") hsl(185, 75%, 39%);
+  background-position: top -550px left -280px, bottom -660px right -220px;
+}
+
+.container {
+  background-color: white;
+  height: 400px;
+  width: 380px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30%;
+  border-radius: 10px 10px 0 0;
+  background: url("./images/bg-pattern-card.svg");
+}
+
+.header img {
+  position: relative;
+  top: 50px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.content {
+  padding: 20px;
+  margin-top: 70px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name p {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+.age {
+  font-weight: 400;
+  margin-top: 1px;
+  font-size: 1.2rem;
+  color: hsl(227, 10%, 46%);
+}
+
+.city {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  color: hsl(227, 10%, 46%);
+  margin-top: 12px;
+}
+.divider {
+  margin-top: 50px;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  width: 112%;
+  position: relative;
+  left: -20px;
+}
+.card-foot {
+  text-align: center;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-foot .value {
+  font-weight: 700;
+}
+
+.card-foot .title {
+  color: hsl(227, 10%, 46%);
+  margin-top: 8px;
+}
+
+.attribution {
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .divider {
+    width: 115%;
+  }
+}
